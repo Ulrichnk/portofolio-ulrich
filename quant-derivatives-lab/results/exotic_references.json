@@ -1,0 +1,11 @@
+{
+  "geometric_64_dates": 5.620434431825344,
+  "geometric_mc": {
+    "value": 5.59567244786658,
+    "standard_error": 0.01871944333178199,
+    "ci_low": 5.558980792502672,
+    "ci_high": 5.632364103230487,
+    "independent_samples": 20000
+  },
+  "continuous_up_out_130": 3.3328575677087238
+}

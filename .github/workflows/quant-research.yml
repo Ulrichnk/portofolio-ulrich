@@ -1,0 +1,33 @@
+name: Quant research validation
+on:
+  push:
+    paths: ["src/**", "tests/**", "experiments/**", "pyproject.toml", "requirements-tested.txt", ".github/workflows/quant-research.yml"]
+  pull_request:
+    paths: ["src/**", "tests/**", "experiments/**", "pyproject.toml", "requirements-tested.txt", ".github/workflows/quant-research.yml"]
+permissions:
+  contents: read
+jobs:
+  numerical-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e . -c requirements-tested.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python experiments/reproduce.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-results-${{ matrix.python }}
+          path: |
+            quant-derivatives-lab/results/
+            interest-rate-analytics/results/
+            financial-risk-ml/results/
+            experiments/environment.json

@@ -1,0 +1,17 @@
+{
+  "max_quote_repricing_error": 7.979727989493313e-17,
+  "five_year_par_swap_rate": 0.02980410066928182,
+  "bond_risk": {
+    "pv": 102.40833992435037,
+    "signed_pv01": -0.04745089569205163,
+    "dollar_duration": 474.5089569205163,
+    "dollar_convexity": 2305.0822534287363
+  },
+  "payer_swap_risk": {
+    "pv": 0.0,
+    "signed_pv01": 468.03915575516214,
+    "dollar_duration": -4680391.557551621,
+    "dollar_convexity": -22827483.409093928
+  },
+  "max_discount_error": 1.1102230246251565e-16
+}

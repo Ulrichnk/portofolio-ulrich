@@ -1,0 +1,90 @@
+{
+  "seed": 42,
+  "n_returns": 4000,
+  "train_rows": 2364,
+  "validation_rows": 788,
+  "test_rows": 788,
+  "selected": {
+    "ridge": 1.0,
+    "boosting": 100.0
+  },
+  "validation_scores": {
+    "ridge": {
+      "1.0": 0.8225002624463699,
+      "10.0": 0.8225927367030107,
+      "100.0": 0.8234781958007954
+    },
+    "boosting": {
+      "1.0": 0.8523664757599885,
+      "10.0": 0.8505806626857009,
+      "100.0": 0.8434944748760178
+    }
+  },
+  "metrics": {
+    "ridge": {
+      "qlike": 0.9062802138012991,
+      "mse": 2.019363444318576,
+      "var_1pct": {
+        "observations": 788,
+        "exceptions": 13,
+        "exception_rate": 0.01649746192893401,
+        "expected_rate": 0.01,
+        "kupiec_lr": 2.8098345842879837,
+        "kupiec_pvalue": 0.09368803565129856,
+        "exact_coverage_pvalue": 0.07201695974797741
+      }
+    },
+    "boosting": {
+      "qlike": 0.9097667770407035,
+      "mse": 2.0257914714223815,
+      "var_1pct": {
+        "observations": 788,
+        "exceptions": 13,
+        "exception_rate": 0.01649746192893401,
+        "expected_rate": 0.01,
+        "kupiec_lr": 2.8098345842879837,
+        "kupiec_pvalue": 0.09368803565129856,
+        "exact_coverage_pvalue": 0.07201695974797741
+      }
+    },
+    "historical_20": {
+      "qlike": 0.9500278998190471,
+      "mse": 2.0934229267114817,
+      "var_1pct": {
+        "observations": 788,
+        "exceptions": 17,
+        "exception_rate": 0.021573604060913704,
+        "expected_rate": 0.01,
+        "kupiec_lr": 8.009140326242289,
+        "kupiec_pvalue": 0.00465418270302884,
+        "exact_coverage_pvalue": 0.003411283498727988
+      }
+    },
+    "constant_train": {
+      "qlike": 0.9222171612819136,
+      "mse": 2.057429272983276,
+      "var_1pct": {
+        "observations": 788,
+        "exceptions": 8,
+        "exception_rate": 0.01015228426395939,
+        "expected_rate": 0.01,
+        "kupiec_lr": 0.0018366646059178038,
+        "kupiec_pvalue": 0.9658160642158851,
+        "exact_coverage_pvalue": 0.8578541533218218
+      }
+    },
+    "oracle_garch": {
+      "qlike": 0.9125548958621822,
+      "mse": 2.038161049035529,
+      "var_1pct": {
+        "observations": 788,
+        "exceptions": 13,
+        "exception_rate": 0.01649746192893401,
+        "expected_rate": 0.01,
+        "kupiec_lr": 2.8098345842879837,
+        "kupiec_pvalue": 0.09368803565129856,
+        "exact_coverage_pvalue": 0.07201695974797741
+      }
+    }
+  }
+}

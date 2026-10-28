@@ -1,0 +1,18 @@
+{
+  "ridge": {
+    "mean_qlike_difference": -0.043747686017747915,
+    "block_length": 20,
+    "bootstrap_95pct": [
+      -0.07126926201381319,
+      -0.017940441794191447
+    ]
+  },
+  "boosting": {
+    "mean_qlike_difference": -0.04026112277834366,
+    "block_length": 20,
+    "bootstrap_95pct": [
+      -0.06379403177642176,
+      -0.01676196109543915
+    ]
+  }
+}

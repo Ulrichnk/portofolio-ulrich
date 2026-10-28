@@ -1,0 +1,60 @@
+{
+  "true_parameters": {
+    "v0": 0.04,
+    "kappa": 2.0,
+    "theta": 0.04,
+    "xi": 0.3,
+    "rho": -0.7
+  },
+  "fits": [
+    {
+      "parameters": {
+        "v0": 0.04000000000005332,
+        "kappa": 2.0000000000160694,
+        "theta": 0.040000000000040684,
+        "xi": 0.30000000000659716,
+        "rho": -0.699999999988016
+      },
+      "success": true,
+      "nfev": 9,
+      "price_rmse": 2.105413783230724e-12,
+      "jacobian_singular_values": [
+        255.77200417630823,
+        58.43261642102617,
+        5.972346283284578,
+        0.559752531652457,
+        0.1312464357197036
+      ],
+      "jacobian_condition": 1948.7920016551734,
+      "holdout_max_error": 1.2647660696529783e-12
+    },
+    {
+      "parameters": {
+        "v0": 0.04000000000000035,
+        "kappa": 1.9999999999999123,
+        "theta": 0.03999999999999961,
+        "xi": 0.2999999999999708,
+        "rho": -0.7000000000000408
+      },
+      "success": true,
+      "nfev": 11,
+      "price_rmse": 2.721171505744275e-14,
+      "jacobian_singular_values": [
+        255.7720050782107,
+        58.43261639714573,
+        5.972349095471471,
+        0.5597489527309649,
+        0.13124565881116354
+      ],
+      "jacobian_condition": 1948.803544399254,
+      "holdout_max_error": 0.0
+    }
+  ],
+  "discrete_surface_checks": {
+    "bounds": true,
+    "decreasing_strike": true,
+    "convex_strike": true,
+    "vertical_spread_bound": true,
+    "calendar_interpolated": true
+  }
+}

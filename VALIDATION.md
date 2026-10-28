@@ -1,4 +1,4 @@
-# Validation record - 2026-10-28
+# Validation record 
 
 This records executed development checks, not an independent academic grade or
 production certification. Development assistance is described in CONTRIBUTIONS.md.

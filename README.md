@@ -1,7 +1,7 @@
 # Quantitative Finance Research Portfolio
 
 Three reproducible educational Python projects covering derivatives, interest
-rates and financial risk. Implementation and experiments added on **2026-10-28**.
+rates and financial risk.
 See [development provenance](CONTRIBUTIONS.md) for the scope of AI assistance.
 The repository's existing website and assignment are preserved.
 
